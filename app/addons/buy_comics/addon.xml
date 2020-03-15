@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>buy_comics</id>
+    <status>active</status>
+    <version>1.0</version>
+    <priority>1000</priority>
+    <position>100</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <queries>
+        <item>ALTER TABLE `?:products`
+            ADD `art_by` varchar(32) NOT NULL default '',
+            ADD `release_date` int(11) unsigned NOT NULL default '0',
+            ADD `written_by` mediumtext
+        </item>
+        <item for="uninstall">ALTER TABLE  `?:products`
+            DROP `art_by`,
+            DROP `release_date`,
+            DROP `written_by`
+        </item>
+
+    </queries>
+</addon>
+
+
