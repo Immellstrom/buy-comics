@@ -8,9 +8,9 @@ msgctxt "Addons::name::buy_comics"
 msgid "buy_comics"
 msgstr "Comic book"
 
-msgctxt "Addons::description::purchase_addon"
-msgid "purchase_addon"
-msgstr "Comic book purchase addon"
+msgctxt "Addons::description::buy_comics"
+msgid "buy_comics_desc"
+msgstr "Comic book seals addon"
 
 msgctxt "Languages::buy_comics_title"
 msgid "buy_comics_title"

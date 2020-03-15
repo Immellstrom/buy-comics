@@ -8,16 +8,23 @@
     </div>
 
     <div class="control-group">
-        <label class="control-label" for="release_date">{__("creation_date")}:</label>
+        <label class="control-label" for="release_date">{__("release_date")}:</label>
         <div class="controls">
-            {include file="common/calendar.tpl" date_id="release_date" date_name="product_data[timestamp]" date_val=$product_data.timestamp|default:$smarty.const.TIME start_year=$settings.Company.company_start_year}
+            {include file="common/calendar.tpl" date_id="release_date" date_name="product_data[release_date]" date_val=$product_data.release_date|default:"" start_year=$settings.Company.company_start_year}
         </div>
     </div>
 
     <div class="control-group">
-        <label class="control-label" for="written_by">{__("written_by")}<a class="cm-tooltip" title="Не может содержать более 3000 символов, включая знаки пунктуации"><i class="icon-question-sign"></i></a>:</label>
+        <label class="control-label" for="written_by">{__("written_by")}:</label>
         <div class="controls">
-            <textarea id="written_by" name="product_data[written_by]" cols="55" rows="4" class="input-large user-success"></textarea>
+        {include file="buttons/update_for_all.tpl" display=$show_update_for_all object_id="written_by" name="update_all_vendors[written_by]"}
+        <textarea id="written_by"
+                  name="product_data[written_by]"
+                  cols="55"
+                  rows="8"
+                  class="cm-wysiwyg input-large"
+                  data-ca-is-block-manager-enabled="{fn_check_view_permissions("block_manager.block_selection", "GET")|intval}"
+        >{$product_data.written_by}</textarea>
         </div>
     </div>
 </div>

@@ -11,7 +11,7 @@
         <item>ALTER TABLE `?:products`
             ADD `art_by` varchar(32) NOT NULL default '',
             ADD `release_date` int(11) unsigned NOT NULL default '0',
-            ADD `written_by` mediumtext
+            ADD `written_by` mediumtext NOT NULL default ''
         </item>
         <item for="uninstall">ALTER TABLE  `?:products`
             DROP `art_by`,
