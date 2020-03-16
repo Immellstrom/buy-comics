@@ -7,7 +7,7 @@
 {if $product.release_date}
     <div class="ty-product-block__buy_comics">
         <label class="ty-control-group__label">{__("release_date")}:</label>
-        <span class="ty-control-group__item">{$product.release_date}</span>
+        <span class="ty-control-group__item">{$product.release_date|date_format:"`$settings.Appearance.date_format`"}</span>
     </div>
 {/if}
 {if $product.written_by}
