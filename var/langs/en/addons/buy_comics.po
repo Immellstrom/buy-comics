@@ -1,0 +1,29 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::buy_comics"
+msgid "buy_comics"
+msgstr "Comic book"
+
+msgctxt "Addons::description::buy_comics"
+msgid "buy_comics_desc"
+msgstr "Comic book seals addon"
+
+msgctxt "Languages::buy_comics_title"
+msgid "buy_comics_title"
+msgstr "Addon by comics"
+
+msgctxt "Languages::art_by"
+msgid "art_by"
+msgstr "Art by"
+
+msgctxt "Languages::written_by"
+msgid "written_by"
+msgstr "Written by"
+
+msgctxt "Languages::release_date"
+msgid "release_date"
+msgstr "Release date"
